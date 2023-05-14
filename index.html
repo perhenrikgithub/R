@@ -25,7 +25,6 @@
 
             #overlay {
                 align-items: center;
-                /* animation: play 100s steps(1, end) 1; animation that first uses gif, then jpeg */
                 background: url(bg.jpg);
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -93,19 +92,6 @@
                     transform: translateY(0);
                 }
             }
-
-            @keyframes play {
-                0% {
-                    background: url(bg.gif);
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                }
-                5% {
-                    background: url(bg.jpg);
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                }
-            }
         </style>
 
         <title>NTNU egghunt</title>
@@ -115,7 +101,7 @@
             <div class="img-container">
                 <img id="ntnu" src="ntnu.png" />
             </div>
-            <iframe allow="autoplay; fullscreen" frameborder="0" tabindex="-1" title="Never Gonna Give You Up - by Rick Astley" src="https://player.vimeo.com/video/438334658?autoplay=1&loop=1&title=0&byline=0&portrait=0" style="top: 0%; left: -50%; width: 200%; height: 100%"> </iframe>
+            <iframe allow="fullscreen" frameborder="0" tabindex="-1" title="Never Gonna Give You Up - by Rick Astley" src="https://player.vimeo.com/video/438334658?autoplay=1&loop=1&title=0&byline=0&portrait=0" style="top: 0%; left: -50%; width: 200%; height: 100%"> </iframe>
             <div id="overlay">
                 <button id="enter"><p>Bli med!</p></button>
             </div>
