@@ -121,7 +121,11 @@
             // Finds the <button> and hooks up its click to play the video
             const button = document.querySelector("button");
             enter.addEventListener("click", () => {
-                player.play();
+                player.play().catch((error) => {
+                    // Auto-play was prevented
+                    alert("prevention");
+                    // Show a UI element to let the user manually start playback
+                });
                 document.getElementById("ntnu").style.display = "none";
             });
 
